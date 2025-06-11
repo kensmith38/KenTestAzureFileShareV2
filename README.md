@@ -38,14 +38,16 @@ A physical file/directory gets created when you act on the object (ex: Upload wi
 Note that ShareClient (a.k.a. FileShare) is NOT the same as a ShareFileClient (a.k.a. CloudFile).
 
 ## Visual Studio Setup
-You must clone two GitHub repositories into Visual Studio:
- 1. KenAzureFileShareLibrary - build this project after cloning into VS
- 2. KenTestAzureFileShareV2 (this repository)
+Steps:
+ 1. Clone KenAzureFileShareLibrary from GitHub into a chosen top level directory.
+ 1. In Visual Studio, Build KenAzureFileShareLibrary.
+ 1. Clone KenTestAzureFileShareV2 from GitHub into the same top level directory.
+    1. Open KenTestAzureFileShareV2 with Visual Studio.
+    1. Both projects that were cloned should be present.
+    1. Build Solution to make sure there are no errors.
+    1. Update Form1.cs with <your_azureStorageConnectionString>.
+    1. Build Solution and start the app.
 
- Open KenTestAzureFileShareV2 in Visual Studio and follow these steps:
-  1. Add an existing project (KenAzureFileShareLibrary) to the solution.
-  1. In KenTestAzureFileShareV2, add a reference to project KenAzureFileShareLibrary.
-  1. Build Solution in VS
 
 ## Azure Setup
 You must have an Azure account with a defined storage account.   
