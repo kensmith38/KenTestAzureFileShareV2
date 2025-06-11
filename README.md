@@ -37,7 +37,16 @@ A physical file/directory gets created when you act on the object (ex: Upload wi
 **Note 2:** Perhaps Ken should not have used the term FileShare for a ShareClient.  
 Note that ShareClient (a.k.a. FileShare) is NOT the same as a ShareFileClient (a.k.a. CloudFile).
 
-## Setup
+## Visual Studio Setup
+You must clone two GitHub repositories into Visual Studio:
+ 1. KenAzureFileShareLibrary
+ 2. KenTestAzureFileShareV2 (this repository)
+
+ Open KenTestAzureFileShareV2 in Visual Studio and follow these steps:
+  1. Add an existing project (KenAzureFileShareLibrary) to the solution.
+  1. In KenTestAzureFileShareV2, add a reference to project KenAzureFileShareLibrary.
+
+## Azure Setup
 You must have an Azure account with a defined storage account.   
 Your **azureStorageConnectionString** can be found on the Azure portal at:    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your_azure_storageaccount/Data storage/Security+networking/Access keys.    
