@@ -39,12 +39,13 @@ Note that ShareClient (a.k.a. FileShare) is NOT the same as a ShareFileClient (a
 
 ## Visual Studio Setup
 You must clone two GitHub repositories into Visual Studio:
- 1. KenAzureFileShareLibrary
+ 1. KenAzureFileShareLibrary - build this project after cloning into VS
  2. KenTestAzureFileShareV2 (this repository)
 
  Open KenTestAzureFileShareV2 in Visual Studio and follow these steps:
   1. Add an existing project (KenAzureFileShareLibrary) to the solution.
   1. In KenTestAzureFileShareV2, add a reference to project KenAzureFileShareLibrary.
+  1. Build Solution in VS
 
 ## Azure Setup
 You must have an Azure account with a defined storage account.   
